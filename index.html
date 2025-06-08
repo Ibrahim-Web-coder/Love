@@ -3,62 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manaim, You're My World</title>
-  <link rel="stylesheet" href="style.css">
+  <title>To Manaim 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
+  <canvas id="heart-canvas"></canvas>
 
-  <canvas id="heartCanvas"></canvas>
+  <div class="container">
+    <h1 class="glow">To My Sweet Manaim 💖</h1>
 
-  <!-- Profile Circle Icons in a Row -->
-  <div class="image-row">
-    <div class="glow-icon" onclick="showFullImage('Adobe Express - file (1).png')">
-      <img src="Adobe Express - file (1).png" alt="Manaim Image 1">
+    <h2 class="dedication pulse-text">
+      I have written a book for you, <strong>"The Book of Love"</strong>, dedicated to you — my inspiration and my heart. 💖
+    </h2>
+
+    <!-- Two images in a row -->
+    <div class="photo-row">
+      <img src="Screenshot 2025-05-10 194700_edited.jpg" class="photo-icon" onclick="openFullImage(1)" alt="Manaim 1" title="Click to view full photo" />
+      <img src="Adobe Express - file (1).png" class="photo-icon" onclick="openFullImage(2)" alt="Manaim 2" title="Click to view second photo" />
     </div>
-    <div class="glow-icon" onclick="showFullImage('Screenshot 2025-05-10 194700_edited.jpg')">
-      <img src="Screenshot 2025-05-10 194700_edited.jpg" alt="Manaim Image 2">
+
+    <!-- Fullscreen popup -->
+    <div id="full-image" class="full-image-popup" onclick="closeFullImage()">
+      <img id="popup-img" src="" alt="Full" />
     </div>
+
+    <a href="https://the-book-of-love.vercel.app" target="_blank">
+      <button class="glow-btn">📖 Read or Download the Book</button>
+    </a>
+
+    <p id="love-text" class="love-message pulse-text"></p>
+
+    <button onclick="showSecret()" class="glow-btn">💌 Reveal Secret</button>
+    <p id="secret-text" class="hidden glow-text">I love you more than words can ever say. ❤️ You are my world.</p>
+
+    <button onclick="toggleMusic()" class="glow-btn">🎵 Toggle Music</button>
+    <audio id="bg-music" src="music.MP3" loop></audio>
   </div>
-
-  <h1>Manaim, You're a Blessing 🌸</h1>
-
-  <div class="typewriter">
-    <h2 id="typingText"></h2>
-  </div>
-
-  <div class="description">
-  <p>
-    Your smile is a sunrise. <br>
-    Your eyes shine brighter than stars. <br>
-    With every heartbeat, I feel lucky to have you. <br>
-    You’re not just beautiful, Manaim – you’re perfect. 💖 <br>
-    You make ordinary moments magical. <br>
-    Every day with you feels like a dream I never want to wake up from. 💖
-  </p>
-</div>
-
-
-  <button class="secret-button" onclick="revealSecret()">Click for a Secret 💌</button>
-  <div class="secret-message" id="secretMessage">I love you, Manaim ❤️</div>
-
-  <button class="mode-toggle" onclick="toggleMode()">🌙 Toggle Mode</button>
-  <button onclick="scrollToTop()" class="scroll-top">🔼</button>
-
-  <audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <!-- Fullscreen Image Viewer -->
-  <div id="fullscreen" class="fullscreen" onclick="closeFullImage()">
-    <img id="fullImage" src="" alt="Full Image">
-  </div>
-
-  <footer>
-    Made with 💖 just for you, Manaim
-  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
