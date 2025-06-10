@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To Manaim 💖</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>My Projects Homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="heart-canvas"></canvas>
+    
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/11/17/audio_9f0c7bda6b.mp3?filename=a-beautiful-emotional-piano-ambient-background-12079.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-  <div class="container">
-    <h1 class="glow">To My Sweet Manaim 💖</h1>
+    
+<div class="heart-container">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+</div>
 
-    <h2 class="dedication pulse-text">
-      I have written a book for you, <strong>"The Book of Love"</strong>, dedicated to you — my inspiration and my heart. 💖
-    </h2>
+    <h1>Welcome to My Project Showcase.This is a gift for you My Love 💖💖</h1>
+    
+    
+<div id="love-message">
+    <p>To the most beautiful soul, Manaim 💖<br>
+    This is a small piece of my heart, crafted just for you.<br>
+    Every project here reflects a memory, a feeling, a smile... with you in it.</p>
+</div>
 
-    <!-- Two images in a row -->
-    <div class="photo-row">
-      <img src="Screenshot 2025-05-10 194700_edited.jpg" class="photo-icon" onclick="openFullImage(1)" alt="Manaim 1" title="Click to view full photo" />
-      <img src="Adobe Express - file (1).png" class="photo-icon" onclick="openFullImage(2)" alt="Manaim 2" title="Click to view second photo" />
+    <input type="text" id="searchInput" placeholder="Search projects...">
+    <div class="projects-container">
+
+        <a class="project-card" href="./A%20sweet%20gift%20to%20Manaim/" target="_blank">
+            <div>A sweet gift to Manaim</div>
+        </a>
+    
+        <a class="project-card" href="./For%20Sania%20My%20elder%20sister/" target="_blank">
+            <div>For Sania My elder sister</div>
+        </a>
+    
+        <a class="project-card" href="./Manaim%20a%20beautiful%20soul/" target="_blank">
+            <div>Manaim a beautiful soul</div>
+        </a>
+    
+        <a class="project-card" href="./Some%20word%27s%20of%20manaim%20beauty/" target="_blank">
+            <div>Some word's of manaim beauty</div>
+        </a>
+    
+        <a class="project-card" href="./The%20book%20of%20love/" target="_blank">
+            <div>The book of love</div>
+        </a>
+    
+        <a class="project-card" href="./game/" target="_blank">
+            <div>game</div>
+        </a>
+    
+        <a class="project-card" href="./game%282%29/" target="_blank">
+            <div>game(2)</div>
+        </a>
+    
     </div>
-
-    <!-- Fullscreen popup -->
-    <div id="full-image" class="full-image-popup" onclick="closeFullImage()">
-      <img id="popup-img" src="" alt="Full" />
-    </div>
-
-    <a href="https://the-book-of-love.vercel.app" target="_blank">
-      <button class="glow-btn">📖 Read or Download the Book</button>
-    </a>
-
-    <p id="love-text" class="love-message pulse-text"></p>
-
-    <button onclick="showSecret()" class="glow-btn">💌 Reveal Secret</button>
-    <p id="secret-text" class="hidden glow-text">I love you more than words can ever say. ❤️ You are my world.</p>
-
-    <button onclick="toggleMusic()" class="glow-btn">🎵 Toggle Music</button>
-    <audio id="bg-music" src="music.MP3" loop></audio>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
